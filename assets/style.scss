@@ -23,20 +23,23 @@ body {
   background-size: 20px 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-header {}
+header {
+  text-align: center;
+}
 
-main {}
+main {
+
+}
 
 section {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 article {
-  padding: 1rem;
   margin-bottom: 0.5rem;
 }
 
@@ -44,21 +47,21 @@ span {}
 
 blockquote {}
 
+h1, h2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
 h1 {
   font-size: 2rem;
-  margin-bottom: 1rem;
 }
 
 h2 {
   font-size: 1.75rem;
-  padding: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 
 h3 {
   font-size: 1.5rem;
-  padding: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 
 h4 {
@@ -77,89 +80,93 @@ p {
   font-size: 1rem;
 }
 
+a {
+  font-size: 1rem;
+  text-decoration: none;
+}
+
 img {}
+
 /* LAYOUT */
-section h2 {
-  text-align: center;
-}
-
-.colors,
-.patterns {
+// color palettes
+.color-palettes {
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.color-palette,
-.pattern {
-  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.color-palettes h2 {
   width: 100%;
+
 }
 
-.patterns {
-  background-color: white;
+.color-palettes article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.pattern {}
-/* MODULES */
-.colors h3 {
+.color-palettes article h3 {
   width: 100%;
   text-align: center;
 }
 
-.colors div {
+/* SIZING */
+.color-palettes div {
   height: 3rem;
   width: 3rem;
 }
 
-.colors .violet div:nth-child(2) {
+.patterns div {
+  height: 7rem;
+  width: 7rem;
+}
+
+
+/* FILL */
+ .color-palettes__violet div:nth-child(2) {
   background-color: $violet-1;
 }
 
-.colors .violet div:nth-child(3) {
+.color-palettes__violet div:nth-child(3) {
   background-color: $violet-2;
 }
 
-.colors .violet div:nth-child(4) {
+.color-palettes__violet div:nth-child(4) {
   background-color: $violet-3;
 }
 
-.colors .violet div:nth-child(5) {
+.color-palettes__violet div:nth-child(5) {
   background-color: $violet-4;
 }
 
-.colors .violet div:nth-child(6) {
+.color-palettes__violet div:nth-child(6) {
   background-color: $violet-5;
 }
 
-.colors .sunrise div:nth-child(2) {
+.color-palettes__sunrise div:nth-child(2) {
   background-color: $sunrise-1;
 }
 
-.colors .sunrise div:nth-child(3) {
+.color-palettes__sunrise div:nth-child(3) {
   background-color: $sunrise-2;
 }
 
-.colors .sunrise div:nth-child(4) {
+.color-palettes__sunrise div:nth-child(4) {
   background-color: $sunrise-3;
 }
 
-.colors .sunrise div:nth-child(5) {
+.color-palettes__sunrise div:nth-child(5) {
   background-color: $sunrise-4;
 }
 
-.colors .sunrise div:nth-child(6) {
+.color-palettes__sunrise div:nth-child(6) {
   background-color: $sunrise-5;
 }
 
-.pattern div {
-  height: 3rem;
-  width: 3rem;
-}
-
-.pattern div:nth-child(2) {
+.patterns__dotted-background div:nth-child(2) {
   // background-image: radial-gradient(#ece0ec 10%, transparent 0);
   // background-size: 20px 20px;
   background-color: blue;
