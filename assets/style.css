@@ -1,0 +1,43 @@
+@import 'reset.css';
+
+/* BASE */
+html {
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+body {
+  font-family: serif;
+  display: flex;
+  flex-direction: column;
+}
+
+header {}
+
+main {}
+
+section {}
+
+article {}
+
+span {}
+
+blockquote {}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {}
+
+p {}
+
+img {}
+
+/* LAYOUT, classes and such */
+/* MODULES */
+/* STATE */
+/* THEME */
