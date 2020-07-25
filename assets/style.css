@@ -1,14 +1,27 @@
 @import 'reset.css';
+@import 'fonts.css';
 
+ :root {
+/* Color Theme Swatches in RGBA */
+--violet-1-rgba: rgba(91, 46, 114, 1);
+--violet-2-rgba: rgba(134, 99, 120, 1);
+--violet-3-rgba: rgba(107, 80, 148, 1);
+--violet-4-rgba: rgba(0, 0, 13, 1);
+--violet-5-rgba: rgba(34, 0, 40, 1);
+
+ }
 /* BASE */
 html {
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 body {
-  font-family: serif;
+  font-family: sans-serif;
+  background-image: radial-gradient(#ece0ec 10%, transparent 0);
+  background-size: 20px 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 header {}
@@ -37,7 +50,9 @@ p {}
 
 img {}
 
-/* LAYOUT, classes and such */
-/* MODULES */
+/* LAYOUT */
+
+
+/* MODULES, classes and such */
 /* STATE */
 /* THEME */
