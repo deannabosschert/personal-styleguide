@@ -1,0 +1,26 @@
+{
+  "name": "personal-styleguide",
+  "version": "1.0.0",
+  "description": "Generic place for my default styleguide",
+  "scripts": {
+    "predev": "rimraf _site",
+    "dev": "npx @11ty/eleventy --formats=html,gif,jpg,png,css --serve --port=3000",
+    "debug": "DEBUG=* eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deannabosschert/personal-styleguide.git"
+  },
+  "keywords": [],
+  "author": "Deanna Bosschert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deannabosschert/personal-styleguide/issues"
+  },
+  "homepage": "https://github.com/deannabosschert/personal-styleguide#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "rimraf": "^3.0.2",
+    "file-size": "^1.0.0"
+  }
+}
