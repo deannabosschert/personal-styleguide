@@ -4,7 +4,9 @@
   "description": "Generic place for my default styleguide",
   "scripts": {
     "predev": "rimraf _site",
-    "dev": "npx @11ty/eleventy --formats=html,gif,jpg,png,css --serve --port=3000",
+    "dev:eleventy": "npx @11ty/eleventy --formats=html,gif,jpg,png,css --serve --port=3000",
+    "dev:css": "sass --watch assets:_site/assets",
+    "dev": "cross-env ELEVENTY_ENV=development run-p dev:*",
     "debug": "DEBUG=* eleventy"
   },
   "repository": {
@@ -20,6 +22,8 @@
   "homepage": "https://github.com/deannabosschert/personal-styleguide#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
+    "cross-env": "^7.0.2",
+    "npm-run-all": "^4.1.5",
     "rimraf": "^3.0.2",
     "file-size": "^1.0.0"
   }
