@@ -1,18 +1,19 @@
 @import 'reset.css';
 @import 'fonts.css';
 
- :root {
-/* Color Theme Swatches in RGBA */
---violet-1-rgba: rgba(91, 46, 114, 1);
---violet-2-rgba: rgba(134, 99, 120, 1);
---violet-3-rgba: rgba(107, 80, 148, 1);
---violet-4-rgba: rgba(0, 0, 13, 1);
---violet-5-rgba: rgba(34, 0, 40, 1);
+:root {
+  /* Color Theme Swatches in RGBA */
+  --violet-1-rgba: rgba(91, 46, 114, 1);
+  --violet-2-rgba: rgba(134, 99, 120, 1);
+  --violet-3-rgba: rgba(107, 80, 148, 1);
+  --violet-4-rgba: rgba(0, 0, 13, 1);
+  --violet-5-rgba: rgba(34, 0, 40, 1);
+}
 
- }
 /* BASE */
 html {
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  max-width: 100vw;
 }
 
 body {
@@ -51,8 +52,42 @@ p {}
 img {}
 
 /* LAYOUT */
+.colors {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
 
+.color-palette {
+  display: flex;
+}
 
 /* MODULES, classes and such */
+.colors div {
+  height: 3rem;
+  width: 3rem;
+}
+
+.colors:nth-child(1) {
+    background-color: var(--violet-1-rgba)
+  }
+
+  .colors div:nth-child(2) {
+    background-color: var(--violet-2-rgba)
+  }
+
+  .colors div:nth-child(3) {
+    background-color: var(--violet-3-rgba)
+  }
+
+  .colors div:nth-child(4) {
+    background-color: var(--violet-4-rgba)
+  }
+
+  .colors div:nth-child(5) {
+    background-color: var(--violet-5-rgba)
+  }
+}
+
 /* STATE */
 /* THEME */
