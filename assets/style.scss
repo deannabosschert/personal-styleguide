@@ -1,13 +1,16 @@
 @use 'reset.scss';
 @use 'fonts.scss';
-
 /* VARIABLES */
-  $violet-1: rgba(91, 46, 114, 1);
-  $violet-2: rgba(134, 99, 120, 1);
-  $violet-3: rgba(107, 80, 148, 1);
-  $violet-4: rgba(0, 0, 13, 1);
-  $violet-5: rgba(34, 0, 40, 1);
-
+$violet-1: rgba(91, 46, 114, 1);
+$violet-2: rgba(134, 99, 120, 1);
+$violet-3: rgba(107, 80, 148, 1);
+$violet-4: rgba(0, 0, 13, 1);
+$violet-5: rgba(34, 0, 40, 1);
+$sunrise-1: rgba(99,120,137, 1);
+$sunrise-2: rgba(166,155,135, 1);
+$sunrise-3: rgba(133,153,166, 1);
+$sunrise-4: rgba(139,144,140, 1);
+$sunrise-5: rgba(242,230,206, 1);
 /* BASE */
 html {
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
@@ -27,9 +30,15 @@ header {}
 
 main {}
 
-section {}
+section {
+  display: flex;
+  flex-direction: column;
+}
 
-article {}
+article {
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
 
 span {}
 
@@ -37,34 +46,65 @@ blockquote {}
 
 h1 {
   font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
-h3 {}
+h3 {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
 
-p {}
+h4 {
+  font-size: 1.375rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1.125rem;
+}
+
+p {
+  font-size: 1rem;
+}
 
 img {}
-
 /* LAYOUT */
-.colors {
+section h2 {
+  text-align: center;
+}
+
+.colors,
+.patterns {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
 
-.color-palette {
+.color-palette,
+.pattern {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
 }
 
-/* MODULES, classes and such */
-.colors h2 {
+.patterns {
+  background-color: white;
+}
+
+.pattern {}
+/* MODULES */
+.colors h3 {
   width: 100%;
   text-align: center;
 }
@@ -74,26 +114,55 @@ img {}
   width: 3rem;
 }
 
-.colors div:nth-child(2) {
+.colors .violet div:nth-child(2) {
   background-color: $violet-1;
 }
 
-.colors div:nth-child(3) {
+.colors .violet div:nth-child(3) {
   background-color: $violet-2;
 }
 
-.colors div:nth-child(4) {
+.colors .violet div:nth-child(4) {
   background-color: $violet-3;
 }
 
-.colors div:nth-child(5) {
+.colors .violet div:nth-child(5) {
   background-color: $violet-4;
 }
 
-.colors div:nth-child(6) {
+.colors .violet div:nth-child(6) {
   background-color: $violet-5;
 }
 
+.colors .sunrise div:nth-child(2) {
+  background-color: $sunrise-1;
+}
 
+.colors .sunrise div:nth-child(3) {
+  background-color: $sunrise-2;
+}
+
+.colors .sunrise div:nth-child(4) {
+  background-color: $sunrise-3;
+}
+
+.colors .sunrise div:nth-child(5) {
+  background-color: $sunrise-4;
+}
+
+.colors .sunrise div:nth-child(6) {
+  background-color: $sunrise-5;
+}
+
+.pattern div {
+  height: 3rem;
+  width: 3rem;
+}
+
+.pattern div:nth-child(2) {
+  // background-image: radial-gradient(#ece0ec 10%, transparent 0);
+  // background-size: 20px 20px;
+  background-color: blue;
+}
 /* STATE */
 /* THEME */
