@@ -50,12 +50,21 @@ header {
   text-align: center;
 }
 
-main {}
+main {
+  width: 85vw;
+  align-self: center;
+}
 
 section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  background: #fefefe;
+  box-shadow: inset 6px 6px 9px #f1f1f1,
+    inset -6px -6px 9px #ffffff;
+  margin-bottom: 2rem;
 }
 
 article {
@@ -113,7 +122,7 @@ img {}
 display: grid;
  grid-template-columns: repeat(3, 1fr);
  grid-template-rows: 0.5fr repeat(2, 1fr);
- gap: 1px 1px;
+ gap: 0.6rem 0.6rem;
  grid-template-areas: "color-palettes__h2 color-palettes__h2 color-palettes__h2" "color-palettes__violet color-palettes__sunrise color-palettes__purple-passion" "color-palettes__touch-of-violet color-palettes__purple-mint color-palettes__dusty-violet";
 }
 
@@ -291,9 +300,9 @@ display: grid;
 }
 
 .patterns__dotted-background div:nth-child(2) {
-  // background-image: radial-gradient(#ece0ec 10%, transparent 0);
-  // background-size: 20px 20px;
-  background-color: blue;
+  background-image: radial-gradient(#ece0ec 10%, transparent 0);
+  background-size: 20px 20px;
+  background-color: #5c365c;
 }
 /* STATE */
 /* THEME */
