@@ -5,7 +5,7 @@
   "scripts": {
     "predev": "rimraf _site",
     "dev:eleventy": "npx @11ty/eleventy --formats=html,gif,jpg,png,css --serve --port=3000",
-    "dev:css": "sass --watch assets:_site/assets",
+    "dev:css": "sass --watch assets/scss:_site/assets/",
     "dev": "cross-env ELEVENTY_ENV=development run-p dev:*",
     "debug": "DEBUG=* eleventy"
   },
