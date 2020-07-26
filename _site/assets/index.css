@@ -437,6 +437,13 @@ article {
 }
 
 /* LAYOUT */
+.color-palettes, .patterns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 .color-palettes h2 {
   width: 100%;
 }
@@ -455,6 +462,7 @@ article {
   justify-content: center;
   text-align: center;
   margin-bottom: calc((1.5rem - 1.25rem) + 1.5rem/2);
+  width: 380px;
 }
 
 .color-palettes article h3 {
