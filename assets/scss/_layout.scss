@@ -68,14 +68,10 @@ img {}
 // color palettes
 
 .color-palettes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 0.5fr repeat(2, 1fr);
-  grid-template-areas: "color-palettes__h2 color-palettes__h2 color-palettes__h2" "color-palettes__violet color-palettes__sunrise color-palettes__purple-passion" "color-palettes__touch-of-violet color-palettes__purple-mint color-palettes__dusty-violet";
+
 }
 
 .color-palettes h2 {
-  grid-area: color-palettes__h2;
   width: 100%;
 }
 
@@ -105,43 +101,12 @@ img {}
   text-align: center;
 }
 
-.color-palettes__violet {
-  grid-area: color-palettes__violet;
-}
-
-.color-palettes__sunrise {
-  grid-area: color-palettes__sunrise;
-}
-
-.color-palettes__purple-passion {
-  grid-area: color-palettes__purple-passion;
-}
-
-.color-palettes__touch-of-violet {
-  grid-area: color-palettes__touch-of-violet;
-}
-
-.color-palettes__purple-mint {
-  grid-area: color-palettes__purple-mint;
-}
-
-.color-palettes__dusty-violet {
-  grid-area: color-palettes__dusty-violet;
-}
-
 // patterns
 .patterns {
-  grid-area: patterns;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 0.5fr 1fr;
-  gap: 1px 1px;
-  grid-template-areas: "patterns__h2 patterns__h2 patterns__h2" "patterns__dotted-background patterns__plaid-background patterns__grid-background";
 }
 
 .patterns h2 {
   width: 100%;
-  grid-area: patterns__h2;
 }
 
 .patterns article h3 {
@@ -150,16 +115,14 @@ img {}
 }
 
 .patterns__dotted-background {
-  grid-area: patterns__dotted-background;
 }
 
 .patterns__plaid-background {
-  grid-area: patterns__plaid-background;
 }
 
 .patterns__grid-background {
-  grid-area: patterns__grid-background;
 }
+
 /* SIZING */
 .color-palettes div {
   min-height: 2rem;
