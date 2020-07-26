@@ -98,6 +98,7 @@ img {}
   text-align: center;
   margin-bottom: calc((#{$baseline} - #{$h3}) + #{$baseline}/2);
   width: 380px;
+  padding: 0.5rem;
 }
 
 .color-palettes article h3 {
@@ -128,9 +129,11 @@ img {}
 }
 
 /* SIZING */
-.color-palettes div {
-  min-height: 2rem;
-  min-width: 2rem;
+.color-palettes .container div {
+  min-height: 2.4rem;
+  min-width: 2.4rem;
+  // width: 3.5rem;
+  // height: 3.5rem;
 }
 
 .patterns div {
