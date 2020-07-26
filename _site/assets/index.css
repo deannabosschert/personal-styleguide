@@ -264,98 +264,128 @@ a {
 /* FILL */
 .color-palettes__violet div:nth-child(2) {
   background-color: #5b2e72;
+  grid-area: violet-1;
 }
 .color-palettes__violet div:nth-child(3) {
   background-color: #866378;
+  grid-area: violet-2;
 }
 .color-palettes__violet div:nth-child(4) {
   background-color: #6b5094;
+  grid-area: violet-3;
 }
 .color-palettes__violet div:nth-child(5) {
   background-color: #00000d;
+  grid-area: violet-4;
 }
 .color-palettes__violet div:nth-child(6) {
   background-color: #220028;
+  grid-area: violet-5;
 }
 
 .color-palettes__sunrise div:nth-child(2) {
   background-color: #637889;
+  grid-area: sunrise-1;
 }
 .color-palettes__sunrise div:nth-child(3) {
   background-color: #a69b87;
+  grid-area: sunrise-2;
 }
 .color-palettes__sunrise div:nth-child(4) {
   background-color: #8599a6;
+  grid-area: sunrise-3;
 }
 .color-palettes__sunrise div:nth-child(5) {
   background-color: #8b908c;
+  grid-area: sunrise-4;
 }
 .color-palettes__sunrise div:nth-child(6) {
   background-color: #f2e6ce;
+  grid-area: sunrise-5;
 }
 
 .color-palettes__purple-passion div:nth-child(2) {
   background-color: #f0f0f0;
+  grid-area: purple-passion-1;
 }
 .color-palettes__purple-passion div:nth-child(3) {
   background-color: #70667f;
+  grid-area: purple-passion-2;
 }
 .color-palettes__purple-passion div:nth-child(4) {
   background-color: #cdcdcd;
+  grid-area: purple-passion-3;
 }
 .color-palettes__purple-passion div:nth-child(5) {
   background-color: #67567f;
+  grid-area: purple-passion-4;
 }
 .color-palettes__purple-passion div:nth-child(6) {
   background-color: #b4a3cc;
+  grid-area: purple-passion-5;
 }
 
 .color-palettes__touch-of-violet div:nth-child(2) {
   background-color: #bb80d4;
+  grid-area: touch-of-violet-1;
 }
 .color-palettes__touch-of-violet div:nth-child(3) {
   background-color: #9e68ca;
+  grid-area: touch-of-violet-2;
 }
 .color-palettes__touch-of-violet div:nth-child(4) {
   background-color: #e4cef2;
+  grid-area: touch-of-violet-3;
 }
 .color-palettes__touch-of-violet div:nth-child(5) {
   background-color: #7942b9;
+  grid-area: touch-of-violet-4;
 }
 .color-palettes__touch-of-violet div:nth-child(6) {
   background-color: #a16bcb;
+  grid-area: touch-of-violet-5;
 }
 
 .color-palettes__purple-mint div:nth-child(2) {
   background-color: #ddf8e8;
+  grid-area: purple-mint-1;
 }
 .color-palettes__purple-mint div:nth-child(3) {
   background-color: #cdd5d1;
+  grid-area: purple-mint-2;
 }
 .color-palettes__purple-mint div:nth-child(4) {
   background-color: #b4a6ab;
+  grid-area: purple-mint-3;
 }
 .color-palettes__purple-mint div:nth-child(5) {
   background-color: #946e83;
+  grid-area: purple-mint-4;
 }
 .color-palettes__purple-mint div:nth-child(6) {
   background-color: #615055;
+  grid-area: purple-mint-5;
 }
 
 .color-palettes__dusty-violet div:nth-child(2) {
   background-color: #d9c9c3;
+  grid-area: dusty-violet-1;
 }
 .color-palettes__dusty-violet div:nth-child(3) {
   background-color: #e3d0cc;
+  grid-area: dusty-violet-2;
 }
 .color-palettes__dusty-violet div:nth-child(4) {
   background-color: #cccccc;
+  grid-area: dusty-violet-3;
 }
 .color-palettes__dusty-violet div:nth-child(5) {
   background-color: #e3ccd8;
+  grid-area: dusty-violet-4;
 }
 .color-palettes__dusty-violet div:nth-child(6) {
   background-color: #d9c3d9;
+  grid-area: dusty-violet-5;
 }
 
 .patterns__dotted-background div:nth-child(2) {
@@ -449,31 +479,64 @@ article {
   width: 100%;
 }
 
+.color-palettes__violet, .color-palettes__sunrise, .color-palettes__purple-mint, .color-palettes__dusty-violet, .color-palettes__purple-passion, .color-palettes__touch-of-violet {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
+
 .color-palettes__violet {
   grid-area: color-palettes__violet;
+  grid-template-areas: "color-palettes__violet__h3 color-palettes__violet__h3 color-palettes__violet__h3 color-palettes__violet__h3 color-palettes__violet__h3" "violet-1 violet-2 violet-3 violet-4 violet-5";
+}
+
+.color-palettes__violet h3 {
+  grid-area: color-palettes__violet__h3;
+}
+
+.color-palettes__sunrise h3 {
+  grid-area: color-palettes__sunrise__h3;
+}
+
+.color-palettes__purple-passion h3 {
+  grid-area: color-palettes__purple-passion__h3;
+}
+
+.color-palettes__touch-of-violet h3 {
+  grid-area: color-palettes__touch-of-violet__h3;
+}
+
+.color-palettes__dusty-violet h3 {
+  grid-area: color-palettes__dusty-violet__h3;
 }
 
 .color-palettes__sunrise {
   grid-area: color-palettes__sunrise;
+  grid-template-areas: "color-palettes__sunrise__h3 color-palettes__sunrise__h3 color-palettes__sunrise__h3 color-palettes__sunrise__h3 color-palettes__sunrise__h3" "sunrise-1 sunrise-2 sunrise-3 sunrise-4 sunrise-5";
 }
 
 .color-palettes__purple-passion {
   grid-area: color-palettes__purple-passion;
+  grid-template-areas: "color-palettes__purple-passion__h3 color-palettes__purple-passion__h3 color-palettes__purple-passion__h3 color-palettes__purple-passion__h3 color-palettes__purple-passion__h3" "purple-passion-1 purple-passion-2 purple-passion-3 purple-passion-4 purple-passion-5";
 }
 
 .color-palettes__touch-of-violet {
   grid-area: color-palettes__touch-of-violet;
+  grid-template-areas: "color-palettes__touch-of-violet__h3 color-palettes__touch-of-violet__h3 color-palettes__touch-of-violet__h3 color-palettes__touch-of-violet__h3 color-palettes__touch-of-violet__h3" "touch-of-violet-1 touch-of-violet-2 touch-of-violet-3 touch-of-violet-4 touch-of-violet-5";
 }
 
 .color-palettes__purple-mint {
   grid-area: color-palettes__purple-mint;
+  grid-template-areas: "color-palettes__purple-mint__h3 color-palettes__purple-mint__h3 color-palettes__purple-mint__h3 color-palettes__purple-mint__h3 color-palettes__purple-mint__h3" "purple-mint-1 purple-mint-2 purple-mint-3 purple-mint-4 purple-mint-5";
 }
 
 .color-palettes__dusty-violet {
   grid-area: color-palettes__dusty-violet;
+  grid-template-areas: "color-palettes__dusty-violet__h3 color-palettes__violet__h3 color-palettes__violet__h3 color-palettes__violet__h3 color-palettes__violet__h3" "violet-1 violet-2 violet-3 violet-4 violet-5";
 }
 
-.color-palettes article, .patterns article {
+.color-palettes article,
+.patterns article {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
